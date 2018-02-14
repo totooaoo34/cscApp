@@ -1,0 +1,170 @@
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/order_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/city_choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="#ffffff"
+                android:text="重庆" />
+
+            <ImageView
+                android:id="@+id/main_center_right_ImageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/main_center_right_png" />
+
+            <ImageView
+                android:id="@+id/main_center_left_ImageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/main_center_left_png" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/main_ScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/city_choose"
+            android:background="#ffffff" >
+
+            <!-- android:layout_below="@id/city_choose" -->
+            <!-- android:background="#fffff0" > -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <android.support.v4.view.ViewPager
+                                android:id="@+id/ViewPager"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:background="#ffffff" >
+                            </android.support.v4.view.ViewPager>
+
+                            <com.iofd.csc.custiomview.ShowPageView
+                                android:id="@+id/ShowPageView"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_alignParentBottom="true" >
+                            </com.iofd.csc.custiomview.ShowPageView>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout_foodKind"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <com.iofd.csc.custiomview.ClickableRadioGroup
+                        android:id="@+id/food_HorizontalScrollView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none" >
+
+                        <RelativeLayout
+                            android:layout_width="200dp"
+                            android:layout_height="50dp"
+                            android:orientation="horizontal" >
+
+                            <RadioGroup
+                                android:id="@+id/menu_RadioGroup"
+                                android:layout_width="560dp"
+                                android:layout_height="45dp"
+                                android:background="#eefefe"
+                                android:orientation="horizontal" 
+                                android:gravity="center_vertical">
+
+                                <RadioButton
+                                    android:id="@+id/menu_RadioGroup1"
+                                    style="@style/radiobuttongroup"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/menu_top1" />
+
+                                <RadioButton
+                                    android:id="@+id/menu_RadioGroup2"
+                                    style="@style/radiobuttongroup"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/menu_top2" />
+
+                                <RadioButton
+                                    android:id="@+id/menu_RadioGroup3"
+                                    style="@style/radiobuttongroup"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/menu_top3" />
+
+                                <RadioButton
+                                    android:id="@+id/menu_RadioGroup4"
+                                    style="@style/radiobuttongroup"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/menu_top4" />
+
+                                <RadioButton
+                                    android:id="@+id/menu_RadioGroup5"
+                                    style="@style/radiobuttongroup"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/menu_top5" />
+
+                                <RadioButton
+                                    android:id="@+id/menu_RadioGroup6"
+                                    style="@style/radiobuttongroup"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/menu_top6" />
+
+                                <RadioButton
+                                    android:id="@+id/menu_RadioGroup7"
+                                    style="@style/radiobuttongroup"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/menu_top7" />
+                            </RadioGroup>
+
+                            <TextView
+                                android:id="@+id/line"
+                                android:layout_width="50dp"
+                                android:layout_height="3dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="#aeaeae"
+                                android:text="" />
+                        </RelativeLayout>
+                    </com.iofd.csc.custiomview.ClickableRadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>

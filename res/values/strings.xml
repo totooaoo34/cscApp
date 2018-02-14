@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">乡村基外卖</string>
+    <string name="menu_main">火速订餐</string>
+    <string name="menu_msg">消息中心</string>
+    <string name="menu_rundio">幸运转盘</string>
+    <string name="menu_question">常见问题</string>
+    <string name="menu_remark">使用反馈</string>
+    <string name="menu_survay">问卷调查</string>
+    <string name="menu_about">关于软件</string>
+    <string name="menu_gouwuche">购物车</string>
+    <string name="menu_someinfo">个人中心</string>
+    <string name="menu_myorder">我的订单</string>
+    <string name="menu_sendaddr">送餐地址</string>
+    <string name="menu_elet">电子券</string>
+    <string name="menu_popu">推广</string>
+    <string name="menu_top1">新品</string>
+    <string name="menu_top2">排行</string>
+    <string name="menu_top3">记忆</string>
+    <string name="menu_top4">中餐</string>
+    <string name="menu_top5">西餐</string>
+    <string name="menu_top6">休闲</string>
+    <string name="menu_top7">饮料</string>
+
+</resources>
